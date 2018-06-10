@@ -1,3 +1,4 @@
 # test_imu
 ROS node for testing Tinkerforge IMU
-this is a demonstration
+
+This is part of a broader initiative for ROS Agriculture
