@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+	<arg name="use_imu" default="true"/>
+	<node pkg="test_imu" type="tinkerforge_imu2.py" name="tinkerforge_imu_brick2" output="screen" if="$(arg use_imu)">
+		<param name="uid" value="6rHJR7"/>
+	</node>	
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 map base_imu_link 100" />	
+</launch>
